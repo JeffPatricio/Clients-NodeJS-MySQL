@@ -1,0 +1,19 @@
+body {
+    background-color: #252831;
+}
+
+#imgLogoUsers {
+    width: 40px;
+}
+
+#imgAddButton {
+    width: 15px;
+}
+
+#btnAddClient {
+    padding-top: 3%;
+}
+
+#inputSearch {
+    border-radius: 40px;
+}
