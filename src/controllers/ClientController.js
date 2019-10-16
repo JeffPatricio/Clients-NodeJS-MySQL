@@ -39,6 +39,7 @@ module.exports = {
     update(req, res) {
         const { cpf } = req.params;
         const { dataClient } = req.body;
+
         (dataClient.hasOwnProperty("cpf")) ? delete dataClient.cpf : null;
 
         Client.update(dataClient, { where: { cpf: cpf } }).then(response => {
