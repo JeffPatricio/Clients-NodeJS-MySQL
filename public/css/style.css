@@ -1,19 +1,81 @@
 body {
-    background-color: #252831;
+    background-image: url("../images/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cardMain {
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    margin-top: 5%;
+    border: 1px solid slategray;
+}
+
+#headerCardMain {
+    background-color: slategray;
+    border-radius: 18px 18px 0px 0px;
 }
 
 #imgLogoUsers {
     width: 40px;
 }
 
-#imgAddButton {
-    width: 15px;
+#input {
+    min-width: 100px;
 }
 
 #btnAddClient {
-    padding-top: 3%;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 25px;
 }
 
 #inputSearch {
     border-radius: 40px;
+}
+
+#tableClients {
+    margin-top: 4%;
+    width: 100%;
+}
+
+thead tr th {
+    padding: 1% 2% 1% 2%;
+    background-color: slategray;
+}
+
+tbody tr td {
+    padding: 1% 2% 1% 2%;
+}
+
+.column1 {
+    width: 10%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.column2 {
+    width: 35%;
+}
+
+.column3 {
+    width: 30%;
+}
+
+.column4 {
+    width: 15%;
+    border-radius: 0px 20px 20px 0px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: rgb(214, 221, 228);
+    cursor: pointer;
+}
+
+.icon-search, .icon-delete {
+    width: 20px;
+}
+
+.btnView, .btnDelete {
+    border-radius: 50px;
 }

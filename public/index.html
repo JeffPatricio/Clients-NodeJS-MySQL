@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clients Manager</title>
+    <title>Client Manager</title>
     <link rel="shortcut icon" type="imagem/x-icon" href="images/icons8-nome-64.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,20 +21,81 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 offset-md-2 col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4> <img src="images/users.png" id="imgLogoUsers" name="imgLogoUsers"> CLIENTS</h4>
+            <div class="col-md-10 offset-md-1 col-12">
+                <div class="card" id="cardMain">
+                    <div class="card-header" id="headerCardMain">
+                        <h4> <img src="images/icons8-nome-64.png" id="imgLogoUsers" name="imgLogoUsers"> CLIENTS</h4>
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-10 col-12">
-                                <input type="text" class="form-control" id="inputSearch" name="inputSearch">
+                            <div class="col-md-11 col-10">
+                                <input type="text" class="form-control" id="inputSearch" name="inputSearch"
+                                    placeholder="Search Clients...">
                             </div>
-                            <div class="col-md-2 col-12 text-center">
-                                <button type="button" class="btn btn-outline-success" id="btnAddClient">
-                                    <img src="images/add.png" id="imgAddButton" title="Adicionar Novo Cliente">
-                                </button>
+                            <div class="col-md-1 col-1 text-center">
+                                <button type="button" class="btn btn-primary btn-block" id="btnAddClient"
+                                    title="Add New Client">New</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <table id="tableClients">
+                                    <thead>
+                                        <tr>
+                                            <th class="column1">N°</th>
+                                            <th class="column2">Name</th>
+                                            <th class="column3">Phone</th>
+                                            <th class="column4">Options</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="column1">001</td>
+                                            <td>Nome de bunda</td>
+                                            <td>Rua dos macacos brancos , cep 09892384,</td>
+                                            <td class="column4">
+                                                <button type="button"
+                                                    class="btn btn-outline-default btn-group-sm btnView"
+                                                    id="btnViewClient" title="See Details"><img src="images/search.png"
+                                                        class="icon-search"></button>
+                                                <button type="button"
+                                                    class="btn btn-outline-default btn-group-sm btnDelete"
+                                                    id="btnDelClient" title="Delete Client"><img src="images/trash.png"
+                                                        class="icon-delete"></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">001</td>
+                                            <td>Nome de Teste</td>
+                                            <td>Rua dos macacos brancos , cep 09892384,</td>
+                                            <td class="column4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">001</td>
+                                            <td>Nome de Teste</td>
+                                            <td>Rua dos macacos brancos , cep 09892384,</td>
+                                            <td class="column4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">001</td>
+                                            <td>Nome de Teste</td>
+                                            <td>Rua dos macacos brancos , cep 09892384,</td>
+                                            <td class="column4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">001</td>
+                                            <td>Nome de Teste</td>
+                                            <td>Rua dos macacos brancos , cep 09892384,</td>
+                                            <td class="column4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="column1">001</td>
+                                            <td>Nome de Teste</td>
+                                            <td>Rua dos macacos brancos , cep 09892384,</td>
+                                            <td class="column4"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
