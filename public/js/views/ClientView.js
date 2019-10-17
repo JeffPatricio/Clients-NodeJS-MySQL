@@ -16,6 +16,22 @@ class ClientView {
         }
     }
 
+    openModal(selector) {
+        $(selector).modal();
+    }
+
+    closeModal(selector) {
+        $(selector).modal("hide");
+    }
+
+    showElement(selector) {
+        $(selector).show();
+    }
+
+    closeElement(selector) {
+        $(selector).hide();
+    }
+
     captureField(selector) {
         return $(selector);
     }

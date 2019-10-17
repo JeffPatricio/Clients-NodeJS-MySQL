@@ -15,10 +15,10 @@ class ClientController {
         });
 
         $(".btnView").click(() => {
-
+            alert("click");
         });
         $(".btnDelete").click(() => {
-
+            alert("click");
         });
     }
 
@@ -37,6 +37,11 @@ class ClientController {
             this.clientList = null
             this.clientView.renderClient(null);
         });
+
+        setTimeout(() => {
+            this.clientView.closeElement("#loading");
+            this.clientView.showElement("#cardMain");
+        }, 1000);
     }
 
     get clientModel() {

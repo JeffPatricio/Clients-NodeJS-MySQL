@@ -22,6 +22,15 @@
 
 <body>
     <div class="container-fluid">
+        <div class="row" id="loading">
+            <div class="col-md-4 offset-md-4 text-center">
+                <div class="spinner-border text-light">
+                    <span class="sr-only">Looking for registered customers...</span>
+                </div>
+                <p>Looking for registered customers...</p>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-10 offset-md-1 col-12">
                 <div class="card" id="cardMain">
@@ -83,6 +92,19 @@
              </td>
          </tr>
     </script>
+
+    <div id="modalLoading" class="modal fade" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <img src="https://pt.seaicons.com/wp-content/uploads/2015/11/Time-Sandglass-icon.png"
+                            style="width: 5%; margin-right: 3%;">Looking for registered customers...</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
