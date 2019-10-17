@@ -14,6 +14,7 @@ body {
 #headerCardMain {
     background-color: slategray;
     border-radius: 18px 18px 0px 0px;
+    color: white;
 }
 
 #imgLogoUsers {
@@ -37,15 +38,17 @@ body {
 #tableClients {
     margin-top: 4%;
     width: 100%;
+    display: none;
 }
 
 thead tr th {
     padding: 1% 2% 1% 2%;
     background-color: slategray;
+    color: white;
 }
 
 tbody tr td {
-    padding: 1% 2% 1% 2%;
+    padding: 0% 2% 0% 2%;
 }
 
 .column1 {
@@ -73,9 +76,23 @@ tr:hover {
 }
 
 .icon-search, .icon-delete {
+    width: 15px;
+}
+
+.icon-search:hover, .icon-delete:hover {
     width: 20px;
 }
 
 .btnView, .btnDelete {
     border-radius: 50px;
+}
+
+#clientsEmptyInfo {
+    background-color: rgb(207, 207, 207);
+    font-size: 24px;
+    border-radius: 30px;
+    text-align: center;
+    display: none;
+    margin-top: 5%;
+    padding-top: 1%;
 }
