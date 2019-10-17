@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize");
 const Connection = require("./Connection");
 
-const Client = Connection.define('clientes', {
-    nome: {
+const Client = Connection.define('clients', {
+    name: {
         type: Sequelize.STRING(80),
         allowNull: false
     },
@@ -12,19 +12,19 @@ const Client = Connection.define('clientes', {
         unique: true,
         primaryKey: true
     },
-    dataNascimento: {
+    dateBirth: {
         type: Sequelize.DATE,
         allowNull: false
     },
-    telefone: {
+    phone: {
         type: Sequelize.STRING(20),
         allowNull: false
     },
-    endereco: {
+    address: {
         type: Sequelize.STRING,
         allowNull: false
     },
-    observacao: {
+    note: {
         type: Sequelize.TEXT
     }
 });

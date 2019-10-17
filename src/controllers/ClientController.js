@@ -1,6 +1,6 @@
 const Connection = require("../models/Connection");
 const Client = require("../models/Client");
-const tablename = "clientes";
+const tablename = "clients";
 
 module.exports = {
 
@@ -27,7 +27,7 @@ module.exports = {
 
     read(req, res) {
         const { cpf } = req.params;
-        Client.findByPk(cpf, { attributes: ["nome", "cpf", "dataNascimento", "telefone", "endereco", "observacao"] }).then(response => {
+        Client.findByPk(cpf, { attributes: ["name", "cpf", "dateBirth", "phone", "address", "note"] }).then(response => {
             res.status(200);
             res.json({ response: true, info: response });
         }).catch(error => {
@@ -65,7 +65,7 @@ module.exports = {
     },
 
     list(req, res) {
-        Client.findAll({ attributes: ["nome", "cpf", "dataNascimento", "telefone", "endereco", "observacao"] }).then(response => {
+        Client.findAll({ attributes: ["name", "cpf", "phone"] }).then(response => {
             res.status(200);
             res.json({ response: true, info: response });
         }).catch(error => {
