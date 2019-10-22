@@ -13,9 +13,8 @@ body {
 }
 
 #headerCardMain {
-    background-color: slategray;
     border-radius: 18px 18px 0px 0px;
-    color: white;
+    color: black;
 }
 
 #imgLogoUsers {
@@ -102,4 +101,12 @@ tr:hover {
     color: white;
     font-size: 16px;
     margin-top: calc(90vh / 2);
+}
+
+textarea{
+    resize: none;
+}
+
+.required{
+    color: red;
 }

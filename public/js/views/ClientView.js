@@ -1,10 +1,11 @@
 class ClientView {
     constructor() {
         this._inputSearch = this.captureField("#inputSearch");
+        this._fieldsForm = this.captureField(".fieldsForm");
     }
 
     renderClient(data) {
-        if (data) {
+        if (data != null) {
             const { num, name, phone, cpf } = data;
             const struct = $("#tempRowTable").html();
             const row = Mustache.render(struct, { num, name, phone, cpf });
@@ -38,6 +39,10 @@ class ClientView {
 
     get inputSearch() {
         return this._inputSearch;
+    }
+
+    get fieldsForm(){
+        return this._fieldsForm;
     }
 }
 

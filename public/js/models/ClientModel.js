@@ -13,6 +13,11 @@ class ClientModel {
         });
     }
 
+    validateFieldsNewClient(fields) {
+        fields.forEach(field => {
+            console.log(field);
+        });
+    }
 }
 
 export default ClientModel;

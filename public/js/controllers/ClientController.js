@@ -11,14 +11,33 @@ class ClientController {
 
     addEvents() {
         $("#btnAddClient").click(() => {
-            alert("click");
+            $("#modalNewClient").modal();
         });
 
         $(".btnView").click(() => {
             alert("click");
         });
+
         $(".btnDelete").click(() => {
             alert("click");
+        });
+
+        $("#btnSaveClient").click(() => {
+            console.log(this.clientView.fieldsForm[0]);
+            this.clientModel.validateFieldsNewClient(this.clientView.fieldsForm);
+        });
+
+        $("#inputPhone, #inputCpf").on("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+
+        $("#inputDateBirth").attr("max", () => {
+            const date = new Date();
+            return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+
+            function pad(n) {
+                return n < 10 ? "0" + n : n;
+            }
         });
     }
 
@@ -33,15 +52,18 @@ class ClientController {
             } else {
                 this.clientView.renderClient(null);
             }
+            setTimeout(() => {
+                this.clientView.closeElement("#loading");
+                this.clientView.showElement("#cardMain");
+            }, 500);
         }).catch(() => {
             this.clientList = null
             this.clientView.renderClient(null);
+            setTimeout(() => {
+                this.clientView.closeElement("#loading");
+                this.clientView.showElement("#cardMain");
+            }, 500);
         });
-
-        setTimeout(() => {
-            this.clientView.closeElement("#loading");
-            this.clientView.showElement("#cardMain");
-        }, 1000);
     }
 
     get clientModel() {

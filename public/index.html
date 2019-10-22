@@ -11,10 +11,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="module" src="js/controllers/ClientController.js"></script>
     <script src="js/utils/Mustache.js"></script>
@@ -63,6 +63,7 @@
 
                                     </tbody>
                                 </table>
+
                                 <div id="clientsEmptyInfo">
                                     <div class="row">
                                         <div class="col-md-12 col-12">
@@ -93,10 +94,66 @@
          </tr>
     </script>
 
+    <div id="modalNewClient" class="modal fade" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 10px;">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Client</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 col-12">
+                            <label for="inputName">Name <span class="required">*</span></label>
+                            <input class="form-control fieldsForm" type="text" id="inputName" name="inputName"
+                                placeholder="Enter your full name...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 col-12">
+                            <label for="inputCpf">CPF <span class="required">*</span></label>
+                            <input class="form-control fieldsForm" type="text" id="inputCpf" name="inputCpf"
+                                placeholder="00000000000" maxlength="11">
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <label for="inputDateBirth">Date Birth <span class="required">*</span></label>
+                            <input class="form-control fieldsForm" type="date" id="inputDateBirth"
+                                name="inputDateBirth">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-12">
+                            <label for="inputPhone">Phone <span class="required">*</span></label>
+                            <input class="form-control fieldsForm" type="text" id="inputPhone" name="inputPhone"
+                                placeholder="Enter your phone...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-12">
+                            <label for="inputAddress">Address <span class="required">*</span></label>
+                            <textarea class="form-control fieldsForm" type="text" id="inputAddress" name="inputAddress"
+                                placeholder="Enter your address..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-12">
+                            <label for="inputNote">Note</label>
+                            <textarea class="form-control fieldsForm" type="text" id="inputNote" name="inputNote"
+                                placeholder="Customer remarks..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnSaveClient" name="btnSaveClient" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="modalLoading" class="modal fade" data-backdrop="static" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content" style="border-radius: 10px;">
+                <div class="modal-header" style="border-bottom: none;">
                     <h5 class="modal-title">
                         <img src="https://pt.seaicons.com/wp-content/uploads/2015/11/Time-Sandglass-icon.png"
                             style="width: 5%; margin-right: 3%;">Looking for registered customers...</h5>

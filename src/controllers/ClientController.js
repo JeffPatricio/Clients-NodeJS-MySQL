@@ -81,10 +81,12 @@ module.exports = {
                 tables.forEach(table => { existingTables.push(Object.values(table)[0]) });
                 if (existingTables.includes(tablename)) {
                     console.log("The clients table already exists in the database.");
+                    console.log("Connection OK.");
                     resolve(true);
                 } else {
                     Client.sync({ force: true }).then(() => {
                         console.log("Table successfully generated.");
+                        console.log("Connection OK.");
                         resolve(true);
                     }).catch(error => {
                         console.log("Error generating table: ", error);
