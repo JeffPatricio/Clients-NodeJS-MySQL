@@ -1,5 +1,5 @@
 {
-  "name": "cadastroDeClientesMySQL",
+  "name": "clients-nodejs-mysql",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,11 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^8.1.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mustache": "^3.1.0",
     "mysql2": "^1.7.0",
     "nodemon": "^1.19.4",
-    "sequelize": "^5.19.6"
+    "sequelize": "^5.21.1"
   }
 }
