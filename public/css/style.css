@@ -6,22 +6,22 @@
 header nav {
     background-color: #5340FF;
     color: white;
-    font-family: 'Italianno';
+    /* font-family: 'Italianno'; */
     font-size: 35px;
     margin-left: 0%;
+    box-shadow: 0px 0px 8px gray;
+    height: 60px;
 }
 
-header nav span img {
-    width: 6%;
+header nav img {
+    width: 15%;
     margin-left: 3%;
     margin-right: 1%;
 }
 
 #cardMain {
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
-    margin-top: 5%;
-    border: 1px solid slategray;
+    border-radius: 8px;
+    margin-top: 2%;
     display: none;
 }
 
@@ -41,7 +41,11 @@ header nav span img {
 }
 
 #inputSearch {
-    border-radius: 40px;
+    border-radius: 20px;
+    margin-top: 1%;
+    width: 120%;
+    height: 65%;
+    padding-top: 1%;
 }
 
 #tableClients {
@@ -107,7 +111,7 @@ tr:hover {
 }
 
 #loading {
-    color: white;
+    color: dodgerblue;
     font-size: 16px;
     margin-top: calc(90vh / 2);
 }

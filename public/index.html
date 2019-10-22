@@ -23,16 +23,22 @@
 <body>
     <header>
         <nav class="navbar">
-            <span>
-                <img src="images/logo.png">
-                Clients
-            </span>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <img src="images/logo.png">
+                    Clients
+                </div>
+                <div class="col-md-7 col-12">
+                    <input type="text" class="form-control" id="inputSearch" name="inputSearch"
+                        placeholder="Search Clients...">
+                </div>
+            </div>
         </nav>
     </header>
     <div class=" container-fluid">
         <div class="row" id="loading">
             <div class="col-md-4 offset-md-4 text-center">
-                <div class="spinner-border text-light">
+                <div class="spinner-border text-primary">
                     <span class="sr-only">Looking for registered customers...</span>
                 </div>
                 <p>Looking for registered customers...</p>
@@ -42,14 +48,10 @@
         <div class="row">
             <div class="col-md-10 offset-md-1 col-12">
                 <div class="card" id="cardMain">
-                    <div class="card-header" id="headerCardMain">
-                        <h4> <img src="images/client.png" id="imgLogoUsers" name="imgLogoUsers"> CLIENTS</h4>
-                    </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-11 col-10">
-                                <input type="text" class="form-control" id="inputSearch" name="inputSearch"
-                                    placeholder="Search Clients...">
+
                             </div>
                             <div class="col-md-1 col-1 text-center">
                                 <button type="button" class="btn btn-primary btn-block" id="btnAddClient"
