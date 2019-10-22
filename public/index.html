@@ -5,23 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Manager</title>
-    <link rel="shortcut icon" type="imagem/x-icon" href="images/icons8-nome-64.ico" />
+    <link rel="shortcut icon" type="imagem/x-icon" href="images/clientlogo.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+    </script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="module" src="js/controllers/ClientController.js"></script>
     <script src="js/utils/Mustache.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <header>
+        <nav class="navbar">
+            <span>
+                <img src="images/logo.png">
+                Clients
+            </span>
+        </nav>
+    </header>
+    <div class=" container-fluid">
         <div class="row" id="loading">
             <div class="col-md-4 offset-md-4 text-center">
                 <div class="spinner-border text-light">
@@ -35,7 +43,7 @@
             <div class="col-md-10 offset-md-1 col-12">
                 <div class="card" id="cardMain">
                     <div class="card-header" id="headerCardMain">
-                        <h4> <img src="images/icons8-nome-64.png" id="imgLogoUsers" name="imgLogoUsers"> CLIENTS</h4>
+                        <h4> <img src="images/client.png" id="imgLogoUsers" name="imgLogoUsers"> CLIENTS</h4>
                     </div>
                     <div class="card-body">
                         <div class="row">

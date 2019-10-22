@@ -1,28 +1,37 @@
-body {
-    background-image: url("../images/back.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+@font-face {
+    font-family: 'Italianno';
+    src: url('../fonts/Italianno-Regular-OTF.otf');
+}
+
+header nav {
+    background-color: #5340FF;
+    color: white;
+    font-family: 'Italianno';
+    font-size: 35px;
+    margin-left: 0%;
+}
+
+header nav span img {
+    width: 6%;
+    margin-left: 3%;
+    margin-right: 1%;
 }
 
 #cardMain {
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
     margin-top: 5%;
     border: 1px solid slategray;
     display: none;
 }
 
 #headerCardMain {
-    border-radius: 18px 18px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     color: black;
 }
 
 #imgLogoUsers {
     width: 40px;
-}
-
-#input {
-    min-width: 100px;
 }
 
 #btnAddClient {
@@ -103,10 +112,10 @@ tr:hover {
     margin-top: calc(90vh / 2);
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
-.required{
+.required {
     color: red;
 }
